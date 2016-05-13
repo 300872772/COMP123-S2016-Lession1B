@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: This program demostrait GitHub and Version control
  * best practice. We also explore Unit Testing
  * 
- * Version: 0.1 - Added GetUserName Method
+ * Version: 0.3 - Updated Comments for driver class progam
  */
 
 
@@ -20,8 +20,26 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2016_Lession1B
 {
+    /**
+     * This is the driver class for our program
+     * 
+     * @class Program
+     * 
+     * 
+     * */
+
+
+
     class Program
     {
+        /**
+         * Main Method for class program
+         * 
+         * @parm {String {}} args
+         * @contructor Main
+         * */
+
+
         static void Main(string[] args)
         {
             GetUserName();
