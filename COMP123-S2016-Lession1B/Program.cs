@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: This program demostrait GitHub and Version control
  * best practice. We also explore Unit Testing
  * 
- * Version: 0.4 - extracted OutputStringToControl from GetUserName method
+ * Version: 0.5 - Added Lesson1Unittest 
  */
 
 
@@ -30,7 +30,7 @@ namespace COMP123_S2016_Lession1B
 
 
 
-    class Program
+    public class Program
     {
         /**
          * Main Method for class program
@@ -79,7 +79,7 @@ namespace COMP123_S2016_Lession1B
          
              */
 
-        private static string OutputStringToConsole(string outputString, bool hasNewLine)
+        public static string OutputStringToConsole(string outputString, bool hasNewLine)
         {
             if (hasNewLine)
             {
@@ -88,7 +88,6 @@ namespace COMP123_S2016_Lession1B
             else {
                 Console.Write(outputString);
             }
-            Console.Write(outputString);
 
             return outputString;
         }
