@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: This program demostrait GitHub and Version control
  * best practice. We also explore Unit Testing
  * 
- * Version: 0.3 - Updated Comments for driver class progam
+ * Version: 0.4 - extracted OutputStringToControl from GetUserName method
  */
 
 
@@ -60,13 +60,37 @@ namespace COMP123_S2016_Lession1B
             //initialise variables
             string UserName = "";
 
-            Console.WriteLine("Enter Username: ");
-            UserName=Console.ReadLine();
+            OutputStringToConsole("Enter UserName: ",true);
+            UserName = Console.ReadLine();
 
             Console.WriteLine("/n========================");
             Console.WriteLine("You Entered: " + UserName);
 
             return UserName;
+        }
+
+        /**
+         * This method writes a string to the consol. Parameters allow the user to
+         * choose to add a newline charecher
+         * @method OutputStringToConsole
+         * @param {string} putputString
+         * @param {bool} hasNewLine
+         * @retun {string}
+         
+             */
+
+        private static string OutputStringToConsole(string outputString, bool hasNewLine)
+        {
+            if (hasNewLine)
+            {
+                Console.WriteLine(outputString);
+            }
+            else {
+                Console.Write(outputString);
+            }
+            Console.Write(outputString);
+
+            return outputString;
         }
     }
 }
