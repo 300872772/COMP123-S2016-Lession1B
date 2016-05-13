@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: This program demostrait GitHub and Version control
  * best practice. We also explore Unit Testing
  * 
- * Version: 0.1 - Initial Version
+ * Version: 0.1 - Added GetUserName Method
  */
 
 
@@ -24,6 +24,31 @@ namespace COMP123_S2016_Lession1B
     {
         static void Main(string[] args)
         {
+            GetUserName();
+
+        }
+
+
+        //YUI DOC
+
+        /**
+         * This method reads the UserName from the console
+         * @method GetUserName
+         * @retun {string} UserName 
+         * */
+
+        public static string GetUserName()
+        {
+            //initialise variables
+            string UserName = "";
+
+            Console.WriteLine("Enter Username: ");
+            UserName=Console.ReadLine();
+
+            Console.WriteLine("/n========================");
+            Console.WriteLine("You Entered: " + UserName);
+
+            return UserName;
         }
     }
 }
