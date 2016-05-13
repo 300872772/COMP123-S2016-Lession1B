@@ -8,6 +8,14 @@ namespace LessonTestProject
     [TestClass]
     public class Lesson1UnitTest
     {
+
+        /**
+         * This class is used for to test lesson 1 project
+         * Used for development only
+         * 
+         * @class lessonUnitTest
+         * */
+
         [TestMethod]
         public void OutputStringToConsoleTestMethod()
         {

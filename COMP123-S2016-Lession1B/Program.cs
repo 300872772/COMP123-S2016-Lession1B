@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Description: This program demostrait GitHub and Version control
  * best practice. We also explore Unit Testing
  * 
- * Version: 0.5 - Added Lesson1Unittest 
+ * Version: 0.6 - Refactor 
  */
 
 
@@ -75,13 +75,13 @@ namespace COMP123_S2016_Lession1B
          * @method OutputStringToConsole
          * @param {string} putputString
          * @param {bool} hasNewLine
-         * @retun {string}
+         * @retun {string} outPutString
          
              */
 
         public static string OutputStringToConsole(string outputString, bool hasNewLine)
         {
-            if (hasNewLine)
+           /* if (hasNewLine)
             {
                 Console.WriteLine(outputString);
             }
@@ -89,6 +89,14 @@ namespace COMP123_S2016_Lession1B
                 Console.Write(outputString);
             }
 
+            // (hasNewLine==true) ? Console.WriteLine(outputString) : Console.Write(outputString);
+            */
+
+
+            // refactored using the ternary operator
+
+            string suffixString = hasNewLine ? "\n" : "";
+            Console.Write(outputString+suffixString);
             return outputString;
         }
     }
